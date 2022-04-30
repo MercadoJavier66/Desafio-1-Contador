@@ -6,23 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 1 - contador</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> 
-   
+    <script  src="/app.js" defer></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/stylos.css">
 </head>
 <body style="background-color: #F6F6F6;">
     <div id="Monty">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#" style="cursor: default;">Mi calculadora</a>
+            <a class="navbar-brand" href="#" style="cursor: default;">Integrando Bootstrap</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#" style="cursor: default>Home <span class="sr-only">(current)</span></a>
-                </li>
-              </ul>
+               </ul>
             </div>
           </nav>
     <div class="container" style="background-color: white ; height: 100vh;"  >    
@@ -30,20 +27,20 @@
         <div class="card border-primary mb-3" style="width: 40%;">
             <div class="card-header">Desafio Contador</div>
             <div class="card-body text-primary">
-                <h1>Valor = <span class="monty">{{ contador }}</span></h1>
+                <h1 class="micolor">Valor = <span class="etiqueta">{{ contador }}</span></h1>
                 <p class="card-text">
                     <button class="btn btn-danger" @click="Agregar()">Aumentar</button>      
                     <button class="btn btn-success " @click="Disminuir()">Disminuir</button>
                     <br>
                     <br>
-                    Presione el Boton aumentar para sumar 20. 
+                    Presione el Boton para sumar 20. 
                     <br>
-                    Presione el Boton disminuir para restar 15.
+                    Presione el Boton para restar 15.
                 </p>
             </div>
         </div>
     </div>
     </div>
-    <script  src="/app.js" defer></script>
+
 </body>
 </html>
